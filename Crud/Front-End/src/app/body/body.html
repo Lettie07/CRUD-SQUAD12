@@ -1,0 +1,11 @@
+<div class="body-container">
+  <div class="body-header">
+    <span class="body-title">Corpo da Requisição (JSON)</span>
+    <div class="actions">
+      <button class="btn" (click)="formatBody()">Formatar</button>
+      <button class="btn danger" (click)="clearBody()">Limpar</button>
+    </div>
+  </div>
+
+  <textarea [(ngModel)]="requestBody" class="body-textarea"></textarea>
+</div>

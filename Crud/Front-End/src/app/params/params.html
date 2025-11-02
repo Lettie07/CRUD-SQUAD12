@@ -1,0 +1,22 @@
+<div class="params-container">
+  <div class="params-header">
+    <span class="params-title">Parâmetros de consulta</span>
+    <button class="add-param-btn" (click)="addParam()">+ Add</button>
+  </div>
+
+  <div class="params-table">
+    <div class="params-row params-header-row">
+      <span class="col key">Key</span>
+      <span class="col value">Value</span>
+      <span class="col description">Descrição</span>
+      <span class="col actions">Ações</span>
+    </div>
+
+    <div class="params-row" *ngFor="let param of params(); let i = index">
+      <input [(ngModel)]="param.key" placeholder="Adicionar chave" class="col key" />
+      <input [(ngModel)]="param.value" placeholder="Adicionar valor" class="col value" />
+      <input [(ngModel)]="param.description" placeholder="Descrição" class="col description" />
+      <button class="remove-btn col actions" (click)="removeParam(i)">🗑️</button>
+    </div>
+  </div>
+</div>
