@@ -1,0 +1,34 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "product": "Macboook Air M1",
+            "price": 5000
+        },
+        {
+            "id": 2,
+            "product": "Macboook Air M2",
+            "price": 6000
+        },
+        {
+            "id": 3,
+            "product": "Macboook Air M3",
+            "price": 7000
+        },
+        {
+            "id": 4,
+            "product": "IPhone 16 Pro Max",
+            "price": 5000
+        },
+        {
+            "id": 5,
+            "product": "IPhone 15 Pro Max",
+            "price": 4000
+        },
+        {
+            "id": 6,
+            "product": "IPhonne 16 Plus",
+            "price": 7000
+        }
+    ]
+}
