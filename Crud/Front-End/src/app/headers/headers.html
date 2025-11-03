@@ -1,0 +1,27 @@
+<div class="headers-container">
+  <h2>Gerenciar Headers</h2>
+
+  <form (ngSubmit)="addHeader()">
+    <div class="inputs">
+      <input type="text" placeholder="Chave" [(ngModel)]="newKey" name="key" required />
+      <input type="text" placeholder="Valor" [(ngModel)]="newValue" name="value" required />
+      <button type="submit">Adicionar</button>
+    </div>
+  </form>
+
+  <div class="headers-list" *ngIf="headers.length > 0; else noHeaders">
+    <div *ngFor="let header of headers; let i = index" class="header-item">
+      <span><strong>{{ header.key }}</strong>: {{ header.value }}</span>
+      <button (click)="removeHeader(i)">Remover</button>
+    </div>
+  </div>
+
+  <ng-template #noHeaders>
+    <p>Nenhum header adicionado ainda.</p>
+  </ng-template>
+
+  <div class="token-display" *ngIf="token">
+    <h3>Token atual:</h3>
+    <p>{{ token }}</p>
+  </div>
+</div>

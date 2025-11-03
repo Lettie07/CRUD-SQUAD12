@@ -1,0 +1,78 @@
+.params-container {
+  padding: 20px;
+  background: #0b1e39;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+}
+
+.params-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.params-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.add-param-btn {
+  background: #3aa0ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.add-param-btn:hover {
+  background: #1d7ed1;
+}
+
+.params-table {
+  border: 1px solid #334;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.params-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.2fr 60px;
+  border-bottom: 1px solid #334;
+}
+
+.params-header-row {
+  background: #112a4d;
+  font-weight: bold;
+  color: #9fc9ff;
+}
+
+.params-row input {
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+
+.params-row input:focus {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ff6b6b;
+}
+
+.remove-btn:hover {
+  color: #ff3b3b;
+}

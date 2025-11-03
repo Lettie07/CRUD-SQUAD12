@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Requisições HTTP</title>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="logo">Simulaçāo</div>
+    <div class="request-bar">
+      <select class="method">
+        <option>GET</option>
+        <option>POST</option>
+        <option>PUT</option>
+        <option>DELETE</option>
+      </select>
+      <input type="text" placeholder="Ex: http://localhost:3000/usuarios">
+      <button class="send-btn">Enviar</button>
+    </div>
+    <div class="profile">👤</div>
+  </header>
+
+  <mat-tab-group animationDuration="0.6s">
+    <mat-tab label="Params">
+      <app-params></app-params>
+    </mat-tab>
+
+    <mat-tab label="Body">
+      <app-body></app-body>
+    </mat-tab>
+
+    <mat-tab label="Authorization">
+      <app-authorization></app-authorization>
+    </mat-tab>
+
+    <mat-tab label="Headers">
+      <app-headers></app-headers>
+    </mat-tab>
+  </mat-tab-group>
+
+</body>
+
+</html>

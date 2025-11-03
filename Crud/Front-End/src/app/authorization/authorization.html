@@ -1,0 +1,17 @@
+<div class="auth-container">
+  <h2>Autenticação</h2>
+  <form (ngSubmit)="login()">
+    <label>Email:</label>
+    <input type="email" [(ngModel)]="email" name="email" required />
+
+    <label>Senha:</label>
+    <input type="password" [(ngModel)]="password" name="password" required />
+
+    <button type="submit">Entrar</button>
+  </form>
+
+  <div *ngIf="token" class="token-box">
+    <h3>Token gerado:</h3>
+    <p>{{ token }}</p>
+  </div>
+</div>
